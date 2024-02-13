@@ -1,0 +1,23 @@
+2024-Feb-02/13/24-10-26-28, Beggining extraction
+2024-Feb-02/13/24-10-27-12, Beggining extraction
+2024-Feb-02/13/24-10-27-12, End of extraction
+2024-Feb-02/13/24-10-33-30, ETL job started
+2024-Feb-02/13/24-10-33-30, Extract phase started
+2024-Feb-02/13/24-10-33-30, Extract phase ended
+2024-Feb-02/13/24-10-33-30, Transform phase started
+2024-Feb-02/13/24-10-33-30, Transform phase ended
+2024-Feb-02/13/24-10-33-30, Load phase started
+2024-Feb-02/13/24-10-34-30, ETL job started
+2024-Feb-02/13/24-10-34-30, Extract phase started
+2024-Feb-02/13/24-10-34-30, Extract phase ended
+2024-Feb-02/13/24-10-34-30, Transform phase started
+2024-Feb-02/13/24-10-34-30, Transform phase ended
+2024-Feb-02/13/24-10-34-30, Load phase started
+2024-Feb-02/13/24-10-34-30, Load phase ended
+2024-Feb-02/13/24-10-34-59, ETL job started
+2024-Feb-02/13/24-10-34-59, Extract phase started
+2024-Feb-02/13/24-10-34-59, Extract phase ended
+2024-Feb-02/13/24-10-34-59, Transform phase started
+2024-Feb-02/13/24-10-34-59, Transform phase ended
+2024-Feb-02/13/24-10-34-59, Load phase started
+2024-Feb-02/13/24-10-34-59, Load phase ended
