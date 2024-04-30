@@ -45,3 +45,15 @@ def transform(df, csv_path):
     df['MC_INR_Billion'] = [np.round(x*(exchange_rates['Rate']['INR']), 2) for x in df['MC_USD_Billion']]
 
     return df
+
+def load_to_csv(df, output_path):
+    df.to_csv(output_path)
+    
+def load_to_db(df, sql_connection, table_name):
+    df.to_sql(table_name, sql_connection, if_exists='replace', index=False)
+    
+    
+def run_query(query_statement, sql_connection):
+     print(query_statement)
+     query_output = pd.read_sql(query_statement, sql_connection)
+     print(query_output)
