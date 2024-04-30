@@ -72,3 +72,35 @@ db_name = 'Banks.db'
 table_name = 'Largest_banks'
 
 log_file = 'log_file.txt'
+
+log_progress("Preliminaires complete. Initiating the ETL process")
+
+df = extract(data_url, table_attribs)
+
+print(df)
+
+log_progress('Data extraction complete. Initiating data transformation')
+
+df = transform(df, rates_csv)
+
+print(df)
+
+log_progress('Data transformation complete. Initiating data loading')
+
+load_to_csv(df, output_path)
+
+log_progress('Data saved to csv file')
+
+conn = sqlite3.connect(db_name)
+
+log_progress('SQL connection complete')
+
+load_to_db(df, conn, table_name)
+
+log_progress('Data loaded to Database as table. Running a query')
+
+run_query('SELECT * FROM Largest_banks', conn)
+run_query('SELECT AVG(MC_GBP_Billion) FROM Largest_banks', conn)
+run_query('SELECT Name from Largest_banks LIMIT 5', conn)
+
+log_progress('Process complete.')
