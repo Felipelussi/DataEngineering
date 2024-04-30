@@ -57,3 +57,18 @@ def run_query(query_statement, sql_connection):
      print(query_statement)
      query_output = pd.read_sql(query_statement, sql_connection)
      print(query_output)
+     
+     
+data_url = 'https://web.archive.org/web/20230908091635 /https://en.wikipedia.org/wiki/List_of_largest_banks'
+
+rates_csv = 'exchange_rate.csv'
+
+table_attribs = ['Name', 'MC_USD_Billion']
+
+output_path = 'Largest_banks.csv'
+
+db_name = 'Banks.db'
+
+table_name = 'Largest_banks'
+
+log_file = 'log_file.txt'
