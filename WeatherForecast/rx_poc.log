@@ -1,1 +1,2 @@
-year	month	day	obs_tmp	fc_tmp
+year	month	day     hour    obs_tmp fc_tmp
+
